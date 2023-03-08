@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEATER || Home Page</title>
+
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+   
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="/path/to/cdn/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
+   
+    
+    
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      body::-webkit-scrollbar 
+{
+    display: none;
+}   
+      html{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        background: black;
+        width: fit-content;
+      }
+      #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+      .btn-primary
+      {
+        border-radius: 1rem;
+        background: rgb(12, 12, 12);
+        border: 0.2rem solid rgb(11, 10, 10);
+        color: rgb(206, 0, 0);
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        font-weight:bolder;
+        padding: 1.5rem 1.5rem;
+        margin-top: 3rem;
+        box-shadow: 0px 3px 10px rgb(232, 227, 227);
+        transition: .3s linear;
+        cursor: pointer;
+        z-index: 999;
+      }
+      .btn-primary:hover {
+        border: 2px solid rgb(255, 255, 255);
+        color: rgb(13, 12, 12);
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 3px 10px rgb(244, 244, 244);
+      }
+      #j:hover{
+        border: 2px solid rgb(255, 4, 4);
+        color: rgb(13, 12, 12);
+        background: rgb(253, 0, 0);
+        box-shadow: 0px 3px 10px rgb(255, 1, 1);
+      }
+      #k:hover{
+        border: 2px solid rgb(255, 4, 4);
+        color: rgb(13, 12, 12);
+        background: rgb(253, 0, 0);
+        box-shadow: 0px 3px 10px rgb(255, 1, 1);
+      }
+      @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+       #team {
+       background: #040404 !important;
+
+}
+#team1 {
+       background: #040404 !important;}
+       #team2 {
+       background: #040404 !important;}
+#team3 {
+       background: #040404 !important;}
+       #team4 {
+       background: #040404 !important;}
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #7b0600;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #000000;
+    box-shadow: 0px 3px 10px rgb(238, 235, 235);
+}
+#team1 .card {
+    border: none;
+    background: #000000;
+    box-shadow: 0px 3px 10px rgb(238, 235, 235);
+}
+#team2 .card {
+    border: none;
+    background: #000000;
+    box-shadow: 0px 3px 10px rgb(238, 235, 235);
+}
+#team3 .card {
+    border: none;
+    background: #000000;
+    box-shadow: 0px 3px 10px rgb(238, 235, 235);
+}
+#team4 .card {
+    border: none;
+    background: #000000;
+    box-shadow: 0px 3px 10px rgb(238, 235, 235);
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+.backside .card-title {
+    font-size: 1rem;
+}
+.backside .card-text {
+    font-size: 0.5rem;
+    color:azure;
+}
+
+
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #f8fcfb !important;
+}
+
+.frontside .card .card-body img {
+    max-width:100%;
+    max-height: 100%;
+    border-radius:0.5rem;
+
+}
+ #l {
+          padding: 0.5rem 0.5rem;
+          
+        }
+        #m{
+          padding: 0.5rem 0.5rem;
+         
+        }
+      
+
+
+
+      @media (max-width: 1000px){
+       #j {
+          padding: 0.5rem 0.5rem;
+          margin-top: -2rem;
+        }
+        #k{
+          padding: 0.5rem 0.5rem;
+          margin-top: -2rem;
+        }
+
+      }
+      @media (max-width: 768px)
+      {
+        #j {
+          padding: 0.5rem 0.5rem;
+          margin-top: -2rem;
+        }
+        #k{
+          padding: 0.5rem 0.5rem;
+          margin-top: -2rem;
+        }
+      
+      .dropdown-menu :hover {
+        background: rgba(95, 103, 211, 0.5); 
+      }
+      
+  }
+  
+     
+      .nav-item::after {
+     content: '';
+     display: block;
+     width: 0px;
+     height: 2px;
+     background: #fe0000;
+     transition: 0.4s
+ }
+
+ .nav-item:hover::after {
+     width: 100%
+ }
+
+ .navbar-dark .navbar-nav .active>.nav-link,
+ .navbar-dark .navbar-nav .nav-link.active,
+ .navbar-dark .navbar-nav .nav-link.show,
+ .navbar-dark .navbar-nav .show>.nav-link,
+ .navbar-dark .navbar-nav .nav-link:focus,
+ .navbar-dark .navbar-nav .nav-link:hover {
+     color: #fe0000d6
+ }
+
+ .nav-link {
+    
+     transition: 0.2s
+ }
+ 
+      .dropdown-menu :hover {
+        background: rgba(227, 2, 2, 0.705); 
+      }
+       * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      body::-webkit-scrollbar 
+{
+    display: none;
+}   
+      html{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        background: black;
+        width: fit-content;
+      }
+      @media (max-width: 768px) {
+        #login {
+           float: right;
+           margin-top: -11em;
+           margin-left: -15em;
+        }
+        #entry {
+           float:left;
+           margin-top: -11em;
+           margin-left: -2em;
+        }
+
+      }
+      
+      
+    </style>
+    
+  </head>
+  <body>
+     <header style="
+    height:100vh;
+    width:100vw;
+    background: url('img/homepage.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s linear;
+    z-index: 0;"> 
+     
+  
+        <nav class="navbar navbar-expand-lg bs-light-bg-subtle w-100 position-absolute" >
+            <div class="container-fluid">
+                <a class="navbar-brand" style="font-weight: bolder;color:red;"><i class="fa-solid fa-masks-theater" style="font-size:3rem; color:red;"></i>THEATER</a>
+                <button class="navbar-toggler" style="background:rgb(255, 1, 1);color:rgb(240, 7, 7);"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  ml-10 " id="navbarSupportedContent"style="background:rgb(184, 184, 184, .1);margin-left:3rem;backdrop-filter: blur(4px);border: 13px solid rgb(184, 184, 184, .1);font-weight:bold;position-relative">
+      <ul class="navbar-nav me-10 mb-7 mb-lg-9 " >
+        <li class="nav-item ">
+          <a class="nav-link " aria-current="page" href="index.html" style="color:black;font-weight:bold; margin-left: 3.5rem;">Home</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" href="movies.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black;font-weight:bold; margin-left: 3.5rem;">
+            Movies
+          </a>
+          <ul class="dropdown-menu " style="font-weight:bold;background: rgba(152, 150, 150, 0.5);backdrop-filter: blur(5px);border: 1px solid rgb(184, 184, 184, .5);">
+            <li><a class="dropdown-item" href="movies.html" style="font-weight:bold;color:black">All Movies</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="amharic.html" style="font-weight:bold;color:black">Amharic</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="english.html" style="font-weight:bold;color:black">English</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="korean.html" style="font-weight:bold;color:black">Korean</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="turkish.html" style="font-weight:bold;color:black">Turkish</a></li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page"  href="series.html" style="font-weight:bold;color:black;margin-left:3.5rem;">Series</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="radio.html" style="font-weight:bold;color:black;margin-left:3.5rem;">Radio Drama</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="comingsoon.html" style="font-weight:bold;color:black;margin-left:3.5rem;">Coming Soon</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact.html" style="font-weight:bold;color:black;margin-left:3.5rem;">Contact</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="about.html" style="font-weight:bold;color:black;margin-left:3.5rem;">About</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div> 
+</nav> 
+<div class="d-grid gap-8 col-7 mx-auto ">
+  <button type="button" class="btn btn-light btn-lg" id="entry"
+  style="
+  --bs-btn-padding-y: 5.25rem;
+  --bs-btn-padding-x: 2.5rem;
+   margin-top:8rem;
+   --bs-btn-border-radius: 1.5rem;
+   border: 2px solid rgb(244, 234, 234);
+   color: rgb(13, 12, 12);
+   background: rgb(249, 248, 248);
+   box-shadow: 10px 3px 10px rgb(255, 255, 255);
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   font-weight: 900;
+   --bs-btn-font-size: 1.75rem;">WELL COME TO THEATERS ALL IN ONE BEST MOVIE COLLECTION</button>
+   
+
+   
+
+</div>
+</header>
+<div class="container-fluid mt-5">
+    <div class="card bg-black mx-5" style=" box-shadow:0.2rem 0.1rem 0.1rem 0.2rem #d4d8f5ce;">
+        <div class="row mb-4">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="footer-text pull-left">
+                    <div class="d-flex">
+                        <a class="navbar-brand" style="font-weight: bolder;color:red;"><i class="fa-solid fa-masks-theater" style="font-size:3rem; color:red;"></i>THEATER</a>
+                        
+                    </div>
+                    <p class="card-text" style="color: #C5CAE9;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.</p>
+                    <div class="social mt-2 mb-3 " style="color: white;"> <i class="fa-brands fa-github"></i></div>
+                </div>
+            </div>
+          
+            <div class="col-md-2 col-sm-2 col-xs-2"  style="color: white;">
+                <h5 class="heading">Location <i class="fa-solid fa-location-dot"></i></h5>
+                <ul>
+                    <li>Ethiopia</li>
+                    <li>Addis Ababa</li>
+                    <li>5 Kilo</li>
+                    <li>Site </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2"  style="color: white;">
+                <h5 class="heading">Address</h5>
+                <ul class="card-text">
+                    <li><i class="fa-solid fa-mobile"></i> +251920455398</li>
+                    <li><i class="fa-solid fa-envelope"></i> @liyat.gmail</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2" id="y"  style="color: white;">
+                <h5 class="heading">Quick links</h5>
+                <ul class="card-text">
+                    <li><a href="home.html" style="text-decoration:none;color:#C5CAE9; " >Home</a></li>
+                    <li><a href="about.html"style="text-decoration:none;color:#C5CAE9;">About Us</a></li>
+                    <li><a href="login.html"style="text-decoration:none;color:#C5CAE9;">Login</a></li>
+                    <li><a href="contact.html"style="text-decoration:none;color:#C5CAE9;">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider mb-4"> </div>
+        <div class="row" style="font-size:10px;">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="pull-left"style="color: #C5CAE9;">
+                    <p><i class="fa fa-copyright"></i> 2023 Future coder Liyat Tesfaye</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="pull-right mr-4 d-flex policy" style="color: #C5CAE9;">
+                    <div>Terms of Use</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookie Policy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+  </body>
+  </html>

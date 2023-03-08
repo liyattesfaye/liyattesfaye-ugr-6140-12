@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEATER || Series Page</title>
+
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="/path/to/cdn/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
+    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type = "text/javascript">
+        $(function () {
+            $('#scrollToBottom').bind("click", function () {
+                $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+                return false;
+            });
+            $('#scrollToTop').bind("click", function () {
+                $('html, body').animate({ scrollTop: 0 }, 1200);
+                return false;
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <style>
+     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+       * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+        .dropdown-menu :hover {
+        background: rgba(227, 2, 2, 0.705); 
+      }
+      
+      body::-webkit-scrollbar 
+{
+    display: none;
+}   
+      html{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        background: black;
+        width: fit-content;
+      }
+     
+
+      .btn-primary
+      {
+        border-radius: 1rem;
+        background: rgb(12, 12, 12);
+        border: 0.2rem solid rgb(11, 10, 10);
+        color: rgb(206, 0, 0);
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        font-weight:bolder;
+        padding: 1.5rem 1.5rem;
+        margin-top: 3rem;
+        box-shadow: 0px 3px 10px rgb(232, 227, 227);
+        transition: .3s linear;
+        cursor: pointer;
+        z-index: 999;
+      }
+      .btn-primary:hover {
+        border: 2px solid rgb(255, 255, 255);
+        color: rgb(13, 12, 12);
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 3px 10px rgb(244, 244, 244);
+      }
+      #j:hover{
+        border: 2px solid rgb(255, 4, 4);
+        color: rgb(13, 12, 12);
+        background: rgb(253, 0, 0);
+        box-shadow: 0px 3px 10px rgb(255, 1, 1);
+      }
+      #k:hover{
+        border: 2px solid rgb(255, 4, 4);
+        color: rgb(13, 12, 12);
+        background: rgb(253, 0, 0);
+        box-shadow: 0px 3px 10px rgb(255, 1, 1);
+      }
+      
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+ul>li {
+    padding: 4px;
+    color:#C5CAE9;
+}
+
+ul>li:hover {
+    color: #d12424;
+    cursor: pointer
+}
+ul>li>a:hover{
+    color: #d12424;
+    cursor: pointer
+}
+
+hr {
+    border-width: 3px
+}
+
+.card {
+    padding: 2% 7%;
+   
+}
+
+.social>i {
+    padding: 1%;
+    font-size: 15px
+    
+}
+
+
+.social>i:hover {
+    color: #ff0101d6;
+    cursor: pointer
+}
+
+.policy>div {
+    padding: 4px
+}
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(255, 254, 254)
+}
+
+.divider {
+    border-top: 2px solid white;
+}
+      @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+      
+ #l {
+          padding: 0.5rem 0.5rem;
+          
+        }
+        #m{
+          padding: 0.5rem 0.5rem;
+         
+        }
+
+      @media (max-width: 1025px){
+       #j {
+          padding: 0.5rem 0.5rem;
+          margin-top: -2rem;
+        }
+        #k{
+          padding: 0.5rem 0.5rem;
+          margin-top: -2rem;
+        }
+        
+
+      }
+      @media (max-width: 768px)
+      {
+        #j {
+          padding: 0.5rem 0.5rem;
+          margin-top: -2rem;
+        }
+        #k{
+          padding: 0.5rem 0.5rem;
+          margin-top: -2rem;
+        }
+  }
+  video{
+    display: block;
+    margin: 1em auto;
+    width: 80%;
+    height: calc(.5625 * 80vw);
+    max-width: 1280px;
+    min-width: 320px;
+    max-height: 720px;
+    min-height: 180px;
+    border-radius: 0.3rem;
+    box-shadow: 1px 5px 5px 4px rgba(239, 4, 4, 0.566); 
+
+  }
+
+
+ .nav-item::after {
+     content: '';
+     display: block;
+     width: 0px;
+     height: 2px;
+     background: #fe0000;
+     transition: 0.4s
+ }
+
+ .nav-item:hover::after {
+     width: 100%
+ }
+
+ .navbar-dark .navbar-nav .active>.nav-link,
+ .navbar-dark .navbar-nav .nav-link.active,
+ .navbar-dark .navbar-nav .nav-link.show,
+ .navbar-dark .navbar-nav .show>.nav-link,
+ .navbar-dark .navbar-nav .nav-link:focus,
+ .navbar-dark .navbar-nav .nav-link:hover {
+     color: #fe0000d6
+ }
+
+ .nav-link {
+    
+     transition: 0.2s
+ }
+ 
+ 
+  #scrollToTop, #scrollToBottom
+        {
+             cursor:pointer;
+             background-color:#0a0a0abd;
+             display:inline-block;
+             height:40px;
+             width:40px;
+             color:#fff;
+             font-size:16pt;
+             text-align:center;
+             text-decoration:none;
+             line-height:40px;
+             border-radius: 0.4rem;
+             box-shadow: 1px 5px 5px 4px rgba(255, 255, 255, 0.566); 
+        }
+        #scrollToBottom:hover
+        {
+             background-color:#e20404e6;
+             box-shadow: 1px 5px 5px 4px rgba(215, 74, 74, 0.566); 
+        }
+         #scrollToTop:hover
+        {
+             background-color:#e20404e6;
+             box-shadow: 1px 5px 5px 4px rgba(215, 74, 74, 0.566); 
+        }
+
+.table th{
+	background-color: rgb(5, 5, 5);
+	color:#ffffff;
+}
+.table td{
+	background-color: rgb(255, 254, 254);
+	color:#000000;
+    border: #000000c5 solid 0.03rem;
+}
+
+td , th
+{
+    cursor: pointer;
+}
+
+th:hover
+{
+    background-color: #ffffff;
+    color: #010101;
+    box-shadow: 13px 13px 10px 13px rgb(253, 248, 248);
+}
+    </style>
+    
+    
+  </head>
+  <body>
+     <header 
+     style="
+    height:100vh;
+    width:100vw;
+    background: url('img/wed.jpg')  no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s linear;
+    z-index: 0;" > 
+     
+
+           <nav class="navbar navbar-expand-lg bs-light-bg-subtle  position-absolute w-100 "  >
+            <div class="container-fluid">
+                <a class="navbar-brand" 
+                style="font-weight: bolder;color:red;"><i class="fa-solid fa-masks-theater" style="font-size:3rem; color:red;"></i>THEATER</a>
+                <button class="navbar-toggler" style="background:rgba(210, 5, 5, 0.82);color:rgba(196, 31, 31, 0.769);"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse  ml-2 " id="navbarSupportedContent"style="background:rgb(184, 184, 184, .1);margin-left:3rem;backdrop-filter: blur(4px);border: 13px solid rgb(184, 184, 184, .1);font-weight:bold;">
+      <ul class="navbar-nav me-10 mb-7 mb-lg-9 " >
+        <li class="nav-item ">
+          <a class="nav-link " aria-current="page" href="index.html" style="color:black;font-weight:bold; margin-left: 3.5rem;">Home</a>
+        </li>
+        <li class="nav-item  dropdown  ">
+          <a class="nav-link dropdown-toggle " href="movies.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black;font-weight:bold; margin-left: 3.5rem;">
+            Movies
+          </a>
+          <ul class="dropdown-menu " style="font-weight:bold;background: rgba(152, 150, 150, 0.5);backdrop-filter: blur(5px);border: 1px solid rgb(184, 184, 184, .5);">
+            <li><a class="dropdown-item" href="movies.html" style="font-weight:bold;color:black">All Movies</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="amharic.html" style="font-weight:bold;color:black">Amharic</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="english.html" style="font-weight:bold;color:black">English</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="korean.html" style="font-weight:bold;color:black">Korean</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="turkish.html" style="font-weight:bold;color:black">Turkish</a></li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page"  href="series.html" style="font-weight:bold;color:black;margin-left:3.5rem;">Series</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="radio.html" style="font-weight:bold;color:black;margin-left:3.5rem;">Radio Drama</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="comingsoon.html" style="font-weight:bold;color:black;margin-left:3.5rem;">Coming Soon</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact.html" style="font-weight:bold;color:black;margin-left:3.5rem;">Contact</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="about.html" style="font-weight:bold;color:black;margin-left:3.5rem;">About</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div> 
+</nav> 
+
+<div class="d-grid gap-8 col-7 mx-auto "></div>
+   <h6 style="color:aliceblue;margin-top:13em;">Duration:<span>47–59 minutes</span></h6>
+    <h3 style="color: aliceblue;"><i class="fa-solid fa-star" style="color: yellow;"></i>7.5<span style="color: yellow;">2022/Comedy /horror ‧ 1 season</span></h3> 
+    <h1 style="color:aliceblue;">Wednesday</h1>
+    <p class="mainp"
+    style=" 
+    width:100vw;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    transition: 1s linear;">
+    While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.
+    </p>
+    <div class="d-grid gap-3 d-md-block " style="margin-left: 7em;">
+                <a href="#kurangaye"> <button class="btn btn-primary" type="button" id="j"><i class="fas fa-play" id="play_btn"></i> WATCH TRAILER</button></a>
+                <a><button class="btn btn-primary" type="button" id="k"><i class="fas fa-plus"></i> ADD LIST</button></a>
+    </div>
+</div>
+</header>
+<div >
+ <a href="https://www.hulu.com/welcome?orig_referrer=https%3A%2F%2Fwww.google.com%2F" ><button class="btn btn-primary mx-3"style="color:green;">HULU</button></a>
+ <a href="https://www.dstv.com/en-et/campaign/abol-tv?gclid=Cj0KCQiAnNacBhDvARIsABnDa6-1entIuAOQBGvBM5_TEiGDIGNbfvnYzmN8FA9IjLmhZFTS_3n4BQsaAtT1EALw_wcB&gclsrc=aw.ds" ><button class="btn btn-primary mx-3"  style="color:orange;">ABOL TV</button></a>
+  <a href="https://ebstv.tv/ebs-cinema/" ><button class="btn btn-primary mx-3" style="color: orange;">EBS CINEMA</button></a>
+        <a href="https://www.hbo.com/" ><button class="btn btn-primary mx-3" style="color: rgb(35, 202, 110);">HBO</button></a>
+        <a href="https://www.netflix.com/et/"><button class="btn btn-primary mx-3" >NETFLIX</button></a>
+        <a href="https://www.fanabc.com/"><button class="btn btn-primary mx-3" style="color:yellow">ፋና ቲቪ </button></a>
+        <a href="https://www.youtube.com/channel/UC3twSccDtxRC_N9MgvDLjDw"><button class="btn btn-primary mx-3" >TVN</button></a>
+        <a href="https://jtbc.co.kr/"><button class="btn btn-primary mx-3" >JTBC</button></a>
+        <a href="https://www.primevideo.com/?ref_=dvm_pds_amz_et_dc_s_g_mkw_s9XyesFQ3-dc_pcrid_292926004296&mrntrk=slid__pgrid_35699910934_pgeo_1005570_x__ptid_kwd-3151046130"><button class="btn btn-primary mx-3" style="color: yellow;">Amazon PRIME</button></a>
+        <a href=""><button class="btn btn-primary mx-3" style="color: rgb(5, 77, 159);">ARTS TV</button></a>
+
+</div>
+<br>
+<div align = "right">
+<a href="javascript:;" id="scrollToBottom"><i class="fa-solid fa-arrow-down"></i></a>
+</div>
+<br>
+
+<table class="table table-hover table-dark table-bordered">
+  <thead>
+    <tr>
+      <th>Movie Name</th>
+      <th>Number Of Seasons</th>
+      <th>Episodes </th>
+      <th>Platform</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Game Of Thrones</td>
+      <td data-label="Number Of Seasons">8</td>
+      <td data-label="Episodes">73</td>
+      <td data-label="Platform">HBO</td>
+    </tr>
+    <tr>
+      <td scope="row">Squid Game</td>
+      <td data-label="Number Of Seasons">2</td>
+      <td data-label="Episodes">9</td>
+      <td data-label="Platform">NETFLIX</td>
+             
+    </tr>
+     <tr>
+      <td scope="row">Little Fires Everywhere</td>
+                <td data-label="Number Of Seasons">1</td>
+                <td data-label="Episodes">8</td>
+                <td data-label="Platform">HULU</td> 
+    </tr>
+    <tr>
+      <td scope="row">አደይ</td>
+                <td data-label="Number Of Seasons">6</td>
+                <td data-label="Episodes">95</td>
+                <td data-label="Platform">ABOL TV</td>
+    </tr>
+    <tr>
+      <td scope="row">Iteawon Class</td>
+                <td data-label="Number Of Seasons">1</td>
+                <td data-label="Episodes">16</td>
+                <td data-label="Platform">JTBC</td>
+    </tr>
+
+    <tr>
+      <td scope="row">እረኛዬ</td>
+                <td data-label="Number Of Seasons">4</td>
+                <td data-label="Episodes">48</td>
+                <td data-label="Platform">ARTS TV</td>
+    </tr>
+
+    <tr>
+      <td scope="row">Straner Things</td>
+                <td data-label="Number Of Seasons">4</td>
+                <td data-label="Episodes">34</td>
+                <td data-label="Platform">NETFLIX</td>
+    </tr>
+
+     <tr>
+      <td scope="row">ሰው ለሰው</th>
+                <td data-label="Number Of Seasons">2</td>
+                <td data-label="Episodes">134</td>
+                <td data-label="Platform">EBC</td>
+    </tr>
+
+    <tr>
+      <td scope="row">Euphoria</td>
+                <td data-label="Number Of Seasons">2</td>
+                <td data-label="Episodes">18</td>
+                <td data-label="Platform">HBO</td>
+    </tr>
+
+    <tr>
+      <td scope="row">ቤቶች</td>
+                <td data-label="Number Of Seasons">10</td>
+                <td data-label="Episodes">418</td>
+                <td data-label="Platform">EBC</td>
+    </tr>
+    <tr>
+      <td scope="row">The peripheral</td>
+                <td data-label="Number Of Seasons">2</td>
+                <td data-label="Episodes">18</td>
+                <td data-label="Platform">Prime Videos</td>
+              
+    </tr>
+
+     <tr>
+      <td scope="row">ዘጠነኛው ሺህ</td>
+                <td data-label="Number Of Seasons">3</td>
+                <td data-label="Episodes">190</td>
+                <td data-label="Platform">ፋና ቲቪ</td>
+    </tr>
+
+    <tr>
+      <td scope="row">Alchemy Of Souls</td>
+                <td data-label="Number Of Seasons">2</td>
+                <td data-label="Episodes">30</td>
+                <td data-label="Platform">TVN</td>
+    </tr>
+
+    <tr>
+      <td scope="row">በስንቱ</td>
+                <td data-label="Number Of Seasons">1</td>
+                <td data-label="Episodes">30</td>
+                <td data-label="Platform">EBC</td>
+    </tr>
+    
+
+    
+               
+    
+  </tbody>
+</table>
+<br>
+<video  controls id="kurangaye">
+    <source  src="video/kurangaye.mp4" type="video/mp4" id="kurangaye">
+</video>
+<div align = "right">
+<a href="javascript:;" id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></a>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="card bg-black mx-5" style=" box-shadow:0.2rem 0.1rem 0.1rem 0.2rem #d4d8f5ce;">
+        <div class="row mb-4">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="footer-text pull-left">
+                    <div class="d-flex">
+                        <a class="navbar-brand" style="font-weight: bolder;color:red;"><i class="fa-solid fa-masks-theater" style="font-size:3rem; color:red;"></i>THEATER</a>
+                        
+                    </div>
+                    <p class="card-text" style="color: #C5CAE9;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.</p>
+                    <div class="social mt-2 mb-3 " style="color: white;"><i class="fa fa-instagram fa-lg"></i> <i class="fa fa-twitter fa-lg"></i> <i class="fa fa-linkedin-square fa-lg"></i> <i class="fa fa-facebook"></i> <i class="fa-brands fa-github"></i></div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <h5 class="heading">Location <i class="fa-solid fa-location-dot"></i></h5>
+                <ul>
+                    <li>Ethiopia</li>
+                    <li>Addis Ababa</li>
+                    <li>5 Kilo</li>
+                    <li>Site </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <h5 class="heading">Address</h5>
+                <ul class="card-text">
+                    <li><i class="fa-solid fa-mobile"></i> +251920455398</li>
+                    <li><i class="fa-solid fa-envelope"></i> @liyat.gmail</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2" id="y">
+                <h5 class="heading">Quick links</h5>
+                <ul class="card-text">
+                    <li><a href="home.html" style="text-decoration:none;color:#C5CAE9; " >Home</a></li>
+                    <li><a href="about.html"style="text-decoration:none;color:#C5CAE9;">About Us</a></li>
+                    <li><a href="login.html"style="text-decoration:none;color:#C5CAE9;">Login</a></li>
+                    <li><a href="contact.html"style="text-decoration:none;color:#C5CAE9;">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider mb-4"> </div>
+        <div class="row" style="font-size:10px;">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="pull-left"style="color: #C5CAE9;">
+                    <p><i class="fa fa-copyright"></i> 2023 Future coder Liyat Tesfaye</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="pull-right mr-4 d-flex policy" style="color: #C5CAE9;">
+                    <div>Terms of Use</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookie Policy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+			
+           
+            
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+  </body>
+  </html>
